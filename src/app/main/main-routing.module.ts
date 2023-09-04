@@ -14,13 +14,13 @@ const routes: Routes = [
           import('src/app/features/catalog/catalog.module').then(
             (m) => m.CatalogModule
           ),
-        title: 'Home | BC Store',
+        title: 'Home | GadgetGalaxy',
       },
       {
         path: 'cart',
         loadChildren: () =>
           import('src/app/features/cart/cart.module').then((m) => m.CartModule),
-        title: 'Cart | BC Store',
+        title: 'Cart | GadgetGalaxy',
       },
       {
         path: 'account',
@@ -28,7 +28,7 @@ const routes: Routes = [
           import('src/app/features/account/account.module').then(
             (m) => m.AccountModule
           ),
-        title: 'Account | BC Store',
+        title: 'Account | GadgetGalaxy',
       },
       {
         path: 'not-found',
@@ -36,7 +36,7 @@ const routes: Routes = [
           import(
             'src/app/core/errors/pages/not-found-page/not-found-page.module'
           ).then((m) => m.NotFoundPageModule),
-        title: 'Not Found | BC Store',
+        title: 'Not Found | GadgetGalaxy',
       },
       {
         path: '**',
@@ -44,7 +44,7 @@ const routes: Routes = [
           import(
             'src/app/core/errors/pages/not-found-page/not-found-page.module'
           ).then((m) => m.NotFoundPageModule),
-        title: 'Not Found | BC Store',
+        title: 'Not Found | GadgetGalaxy',
       },
     ],
   },

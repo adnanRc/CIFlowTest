@@ -7,7 +7,7 @@ const routes: Routes = [
     path: 'login',
     loadChildren: () =>
       import('src/app/features/login/login.module').then((m) => m.LoginModule),
-    title: 'Login | BC Store',
+    title: 'Login | GadgetGalaxy',
   },
   {
     path: 'account-creation',
@@ -15,7 +15,7 @@ const routes: Routes = [
       import('src/app/features/account-creation/account-creation.module').then(
         (m) => m.AccountCreationModule
       ),
-    title: 'Create your account | BC Store',
+    title: 'Create your account | GadgetGalaxy',
   },
   {
     path: '',

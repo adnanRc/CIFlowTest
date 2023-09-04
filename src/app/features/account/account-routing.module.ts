@@ -17,7 +17,7 @@ const routes: Routes = [
         path: 'admin',
         loadChildren: () =>
           import('./pages/admin/admin.module').then((m) => m.AdminModule),
-        title: 'Admin View | BC Store',
+        title: 'Admin View | GadgetGalaxy',
         canActivate: [AuthGuard],
       },
       {
@@ -26,7 +26,7 @@ const routes: Routes = [
           import('./pages/user-area/user-area.module').then(
             (m) => m.UserAreaModule
           ),
-        title: 'User Area | BC Store',
+        title: 'User Area | GadgetGalaxy',
         canActivate: [AuthGuard],
       },
     ],

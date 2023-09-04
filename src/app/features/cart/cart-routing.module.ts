@@ -14,7 +14,7 @@ const routes: Routes = [
         path: 'resume',
         loadChildren: () =>
           import('./pages/resume/resume.module').then((m) => m.ResumeModule),
-        title: 'Cart Resume | BC Store',
+        title: 'Cart Resume | GadgetGalaxy',
       },
       {
         path: 'checkout',
@@ -22,7 +22,7 @@ const routes: Routes = [
           import('./pages/checkout/checkout.module').then(
             (m) => m.CheckoutModule
           ),
-        title: 'Cart Checkout | BC Store',
+        title: 'Cart Checkout | GadgetGalaxy',
         canActivate: [CartGuard],
       },
       {
@@ -31,7 +31,7 @@ const routes: Routes = [
           import('./pages/confirmation/confirmation.module').then(
             (m) => m.ConfirmationModule
           ),
-        title: 'Order Confirmation | BC Store',
+        title: 'Order Confirmation | GadgetGalaxy',
         canActivate: [CartGuard],
       },
     ],
