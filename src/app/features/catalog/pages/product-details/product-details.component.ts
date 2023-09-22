@@ -31,7 +31,7 @@ export class ProductDetailsComponent {
   async getProductData(id: string) {
     this.product = await this.productsService.getProductById(id);
     this.stock = this.product.stock;
-    this.title.setTitle(`${this.product.title} | BC Store`);
+    this.title.setTitle(`${this.product.title} | GadgetGalaxy`);
   }
 
   addToCart() {

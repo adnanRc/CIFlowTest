@@ -77,6 +77,11 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "ng-shopping-cart:build",
+            "port": 4200,
+            "disableHostCheck": true
+          },
           "configurations": {
             "production": {
               "browserTarget": "ng-shopping-cart:build:production"
